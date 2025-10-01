@@ -31,6 +31,7 @@ CONFIG_PACKAGE_adguardhome=y
 CONFIG_PACKAGE_kmod-usbip=y
 CONFIG_PACKAGE_kmod-usbip-client=y
 CONFIG_PACKAGE_kmod-usbip-server=y
+CONFIG_PACKAGE_iperf3=y
 EOL
 # }}
 
