@@ -1,6 +1,7 @@
 on:
-  watch:
-    types: started
+  push:
+    branches:
+      - master
 jobs:
   prepare_release:
     runs-on: ubuntu-22.04
