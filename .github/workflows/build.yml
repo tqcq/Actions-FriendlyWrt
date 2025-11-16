@@ -1,6 +1,6 @@
 on:
-  watch:
-    types: started
+  push:
+    - master
 jobs:
   prepare_release:
     runs-on: ubuntu-22.04
@@ -140,9 +140,12 @@ jobs:
 
     strategy:
       matrix:
-        VERSION: ['23.05', '24.10']
-        CPU: [rk3328, rk3528, rk3399, rk3566, rk3568, rk3576, rk3588]
-        SET: [docker, non-docker]
+        # VERSION: ['23.05', '24.10']
+        VERSION: ['24.10']
+        # CPU: [rk3328, rk3528, rk3399, rk3566, rk3568, rk3576, rk3588]
+        CPU: [rk3566]
+        # SET: [docker, non-docker]
+        SET: [docker]
     steps:
     - name: Checkout
       uses: actions/checkout@main
